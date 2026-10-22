@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: hearth-chat
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /
+    envVars:
+      - key: NODE_VERSION
+        value: "22"
+      # Optional — paste these in the Render dashboard (Environment tab):
+      - key: ANTHROPIC_API_KEY   # turns on the Hearth AI chatbot
+        sync: false
+      - key: GIPHY_API_KEY       # turns on GIF search
+        sync: false

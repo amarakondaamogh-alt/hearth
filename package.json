@@ -1,0 +1,21 @@
+{
+  "name": "hearth-chat",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Hearth — a self-hosted chat app with servers, channels, DMs, voice/video calls, GIFs, stickers and an AI bot.",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^1.1.0",
+    "bcryptjs": "^2.4.3",
+    "express": "^4.21.2",
+    "multer": "^2.0.0",
+    "socket.io": "^4.8.1"
+  }
+}
